@@ -1,0 +1,127 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    /* COLOR VARIABLES */
+    --neutral-lt: #FFF;
+    --neutral-mdlt: #F1F1F1;
+    --neutral-md: #999;
+    --neutral-mddk: #444;
+    --neutral-dk: #222;
+    --primary: #006FD6;
+    --accent: #FFCC56;
+    --accent-lt: #ffd77b;
+
+    /* FONT VARIABLES */
+    --font-sans-serif: "Montserrat", sans-serif;
+    --font-monospace: monospace;
+    /* */
+}
+
+/* GLOBAL STYLES */
+html {
+    font-size: 10px; /*for easy rem conversions */
+}
+body {
+    font-family: var(--font-sans-serif);
+    font-size: 1.8rem;
+}
+p {
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary);
+}
+a:hover {
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+
+.btn {
+    font-size: inherit;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    box-shadow: 1px 3px 6px rgba(0,0,0,.2);
+}
+.btn:hover {
+    box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+}
+.primary-btn {
+    color: var(--neutral-lt);
+    background: var(--neutral-dk);
+}
+.primary-btn:hover {
+    background: var(--neutral-mddk);
+}
+.accent-btn {
+    background: var(--accent);
+}
+.accent-btn:hover {
+    background: var(--accent-lt);
+}
+
+/* CODE */
+code {
+    font-family: var(--font-monospace);
+    background: var(--neutral-mdlt);
+    padding: 0 .5rem;
+}
+/* PAGE HEADER */
+.page-header {
+    color: var(--neutral-lt);
+    background: var(--neutral-dk);
+    padding: 2rem;
+    text-align: center;
+}
+.page-heading {
+    font-size: 3rem;
+}
+
+/* MAIN CONTENT */
+.content-area {
+    padding: 2rem;
+}
+.accent-area {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: var(--accent);
+}
+.section-heading {
+    font-size: 2.6rem;
+    margin: 4rem 0 2rem 0;
+}
+.accent-heading {
+    font-size: 2.6rem;
+    margin:0 0 2rem 0;
+}
+
+/* FOOTER */
+.page-footer {
+    color: var(--neutral-md);
+    background: var(--neutral-dk);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 750px) {
+    .content-area {
+        padding: 2rem 15%;
+    }
+    .accent-area {
+        padding-top: 4rem;
+    }
+}
